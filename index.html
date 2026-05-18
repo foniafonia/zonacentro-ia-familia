@@ -207,13 +207,12 @@ body.custom-background { background-color: #ffffff; }
 						
 						<div class="et_pb_menu__wrap">
 							<div class="et_pb_menu__menu">
-								<nav class="et-menu-nav"><ul id="menu-menu-principal-movil" class="et-menu nav"><li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-7377"><a href="https://zonacentromelilla.com/" aria-current="page">Inicio</a></li>
-<li class="et_pb_menu_page_id-2318 menu-item menu-item-type-post_type menu-item-object-page menu-item-7384"><a href="https://zonacentromelilla.com/directorio/">Asociados</a></li>
-<li class="et_pb_menu_page_id-6992 menu-item menu-item-type-post_type menu-item-object-page menu-item-7379"><a href="https://zonacentromelilla.com/zentra2/">ZenTra2</a></li>
-<li class="et_pb_menu_page_id-7381 menu-item menu-item-type-custom menu-item-object-custom menu-item-7381"><a href="https://zonacentromelilla.com/eventos/">Actividades</a></li>
-<li class="et_pb_menu_page_id-7382 menu-item menu-item-type-custom menu-item-object-custom menu-item-7382"><a href="https://zonacentromelilla.com/noticias/">Noticias</a></li>
-<li class="et_pb_menu_page_id-7383 menu-item menu-item-type-custom menu-item-object-custom menu-item-7383"><a href="https://zonacentromelilla.com/revista_de_prensa/">Revista de Prensa</a></li>
-<li class="et_pb_menu_page_id-6680 menu-item menu-item-type-post_type menu-item-object-page menu-item-7378"><a href="https://zonacentromelilla.com/contacto/">Contacto</a></li>
+								<nav class="et-menu-nav"><ul id="menu-menu-principal-movil" class="et-menu nav"><li class="menu-item"><a href="#">Inicio</a></li>
+<li class="menu-item"><a href="#main-content">Propuesta</a></li>
+<li class="menu-item"><a href="#main-content">Aprendizaje</a></li>
+<li class="menu-item"><a href="#main-content">Estructura</a></li>
+<li class="menu-item"><a href="#main-content">Organización</a></li>
+<li class="menu-item"><a href="#contacto-ia">Contacto</a></li>
 </ul></nav>
 							</div>
 							
@@ -278,10 +277,12 @@ jQuery(document).ready(function( $ ) {
 					<div class="et-l et-l--post">
 						<div class="et_builder_inner_content et_pb_gutters3">
 							<style>
-								/* Cabecera limpia: solo logo */
-								.et_pb_menu_0_tb_header{display:none !important}
+								/* Recupera el "tapiz" visual del header */
+								.et_pb_menu_0_tb_header{display:block !important}
 								.et_pb_code_0_tb_header{display:none !important}
 								.et_pb_image_0_tb_header{text-align:center}
+								.et_pb_menu_0_tb_header .et-menu a{font-weight:700;letter-spacing:.2px}
+								.et_pb_menu_0_tb_header .et-menu a:hover{opacity:.85}
 								/* Oculta iconos flotantes externos */
 								.heateor_sss_vertical_sharing,
 								.heateor_sss_floating_follow_icons_container{display:none !important}
@@ -336,6 +337,12 @@ jQuery(document).ready(function( $ ) {
 									background-position:center;
 									border-radius:12px;
 									padding:18px;
+								}
+								.iaf-hero{
+									background-image:
+										linear-gradient(120deg,#004650,#0a6673),
+										repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 18px,rgba(255,255,255,.01) 18px 36px);
+									background-blend-mode:overlay,normal;
 								}
 							</style>
 
@@ -428,7 +435,7 @@ jQuery(document).ready(function( $ ) {
 									<div class="et_pb_column et_pb_column_4_4 et_pb_column_5">
 										<div class="et_pb_module et_pb_text et_pb_text_4 iaf-card">
 											<div class="et_pb_text_inner iaf-contact">
-												<h2 class="iaf-section-title">Contacto</h2>
+												<h2 id="contacto-ia" class="iaf-section-title">Contacto</h2>
 												<p><strong>Gabinete Fonia · Logopedia y Pedagogía</strong></p>
 												<p>José Aserraf</p>
 												<p>Teléfono: <a href="tel:+34651509640">+34 651 50 96 40</a></p>
